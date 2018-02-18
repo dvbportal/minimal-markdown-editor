@@ -2,7 +2,7 @@
 
 .CodeMirror {
   /* Set height, width, borders, and global font properties here */
-  font-family: monospace;
+  font-family: Menlo, Consolas, "DejaVu Sans Mono", monospace;
   height: 300px;
   color: black;
   direction: ltr;
@@ -124,7 +124,7 @@
 .cm-s-default .cm-punctuation,
 .cm-s-default .cm-property,
 .cm-s-default .cm-operator {}
-.cm-s-default .cm-variable-2 {color: #05a;}
+.cm-s-default .cm-variable-2 {color: #05a; line-height: 1.5em;}
 .cm-s-default .cm-variable-3, .cm-s-default .cm-type {color: #085;}
 .cm-s-default .cm-comment {color: #a50;}
 .cm-s-default .cm-string {color: #a11;}
@@ -319,7 +319,7 @@ div.CodeMirror-dragcursors {
 }
 
 .CodeMirror-selected { background: #d9d9d9; }
-.CodeMirror-focused .CodeMirror-selected { background: #d7d4f0; }
+.CodeMirror-focused .CodeMirror-selected { background: rgb(191,216,238); }
 .CodeMirror-crosshair { cursor: crosshair; }
 .CodeMirror-line::selection, .CodeMirror-line > span::selection, .CodeMirror-line > span > span::selection { background: #d7d4f0; }
 .CodeMirror-line::-moz-selection, .CodeMirror-line > span::-moz-selection, .CodeMirror-line > span > span::-moz-selection { background: #d7d4f0; }
@@ -365,17 +365,19 @@ body, html {
   width: 100%;
   height: 100%;
   resize: none;
-  font-size: 16px;
+  font-size: 18px;
+  line-height: 1.2em;
   border-radius: 4px;
   padding: 15px;
-  font-family: monospace;
+  font-family: Lato,Helvetica Neue,Helvetica,sans-serif;
   padding: 8px;
   background-color: transparent;
 }
 
 .CodeMirror .cm-header {
   font-family: arial;
-  color: black;
+  color: #333;
+  line-height: 2em;
 }
 
 .cm-header-1 {
